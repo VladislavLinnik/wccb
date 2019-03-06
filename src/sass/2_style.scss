@@ -26,312 +26,18 @@ body {
     margin: 0 auto;
     padding: 0 10px;
 }
-.section {
-    padding: 10% 0;
-}
-.btn {
-    padding: 14px 40px;
-    background-color: transparent;
-    color: #0056b2;
-    font-size: 14px;
-    letter-spacing: 2px;
-    border: 1px solid #0056b2;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color .5s;
-
-    &:hover {
-        background-color: #0056b2;
-        color: #fff;
-    }
-}
-
-// header
-.header {
-    padding: 18px 0;
-    background-color: #343a40;
-    color: #fff;
-
-    .container {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__main {
-        
-        .header__nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            .logo {
-
-            }
-
-            .nav__list {
-
-                &-item {
-                    margin-left: 40px;
-                    display: inline-block;
-                }
-
-                &-link {
-                    font-size: 14px;
-
-                    &.submenu {
-                        
-                        &::after {
-                            content: '>';
-                            margin-left: 10px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    &__extra {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 14px;
-
-        .header__lang {
-            
-            .lang {
-
-                &::after {
-                    content: '>';
-                    margin-left: 10px;
-                }
-            }
-        }
-
-        .header__login {
-            margin-left: 40px;
-
-            .login {
-
-                img {
-                    margin-right: 5px;
-                    display: inline-block;
-                }
-
-                span {
-                    vertical-align: text-top;
-                }
-            }
-        }
-    }
-}
-
-
-
-// banner
-.banner {
-    background: #fff url('../img/banner-pattern.png') repeat-x;
-
-    &-heading {
-        margin-bottom: 4%;
-        color: $main-text;
-        font-size: 48px;
-        font-weight: bold;
-    }
-
-    &-descr {
-        margin-bottom: 4%;
-        color: $main-text;
-        font-size: 18px;
-        line-height: 1.4;
-    }
-}
-
-
-
-// services
-.services {
-    background-color: #bfd2e4;
-
-    &-wrap {
-        margin: 0 auto;
-        width: 900px;
-    }
-
-    &-text {
-        margin-bottom: 35px;
-        color: $main-text;
-        font-size: 22px;
-        line-height: 1.3;
-    }
-
-    &-card {
-        padding: 35px 0;
-        display: flex;
-        background-color: #fff;
-
-        border-radius: 10px;
-        box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.04);
-    
-        
-
-        .card__info {
-            padding: 30px 40px 0;
-            position: relative;
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            border-right: solid 1px #e6e6e6;
-
-            &:last-child {
-                border-right: none;
-            }
-
-            &-heading {
-                margin-bottom: 35px;
-                color: #59a5da;
-                font-size: 28px;
-                font-weight: bold;
-            }
-
-            &-descr {
-                margin-bottom: 15px;
-                color: $main-text;
-                font-size: 18px;
-                line-height: 1.3;
-            }
-
-            &-img {
-                margin-bottom: -35px;
-                text-align: right;
-
-                img {
-                    
-                }
-                
-                span {
-                    position: absolute;
-                    left: 0;
-                    bottom: -30px;
-                    color: $main-text;
-                    opacity: .1;
-                    font-size: 70px;
-                    font-weight: bold;
-                }
-            }
-        }
-    }
-}
-
-
-
-// calculator
-.calc {
+section {
     position: relative;
-    background-color: #e8ecef;
-
-    .container {
-        text-align: center;
-    }
+}
+.section {
+    padding: 8% 0;
 
     &-text {
-        margin-bottom: 60px;
+        margin-bottom: 65px;
         color: $main-text;
         text-align: center;
         font-weight: bold;
         font-size: 36px;
-    }
-
-    &__card {
-        padding: 50px 110px;
-        position: relative;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.04);
-        z-index: 99;
-
-        &-block {
-            display: flex;
-        }
-
-        &-column {
-            margin-bottom: 50px;
-            width: 50%;
-
-            .card__form {
-                text-align: left;
-
-                select,
-                input {
-                    padding: 12px 20px 12px 10px;
-                    width: 80%;
-                    display: block;
-                    color: #4c5769;
-                    border: solid 1px rgba(76, 87, 105, 0.07);
-                    border-radius: 3px;
-                }
-
-                select {
-                    margin-bottom: 18px;
-                }
-
-                option {
-                    opacity: .7;
-                }
-
-                label {
-                    margin-bottom: 5px;
-                    display: block;
-                    color: #4c5769;
-                    opacity: .5;
-                    font-size: 14px;
-                }
-
-                input {
-                    padding-left: 30px;
-                    background: url(../img/coins.svg) no-repeat 10px 50%;
-                }
-            }
-
-            .card__info {
-                text-align: center;
-
-                &-stat {
-                    margin-bottom: 30px;
-
-                    &:nth-child(2) {
-                        margin-bottom: 40px;
-                    }
-
-                    .number {
-                        color: #59a5da;
-                        font-weight: bold;
-                        font-size: 48px;
-                    }
-
-                    .text {
-                        font-size: 14px;
-                        color: #4c5769;
-                    }
-
-                    span {
-                        display: block;
-                    }
-                }
-
-                &-more {
-                    color: #0056b2;
-                    font-size: 12px;
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-
-    &-descr {
-        margin-bottom: 40px;
-        color: #4c5769
     }
 
     &-img {
@@ -350,106 +56,74 @@ body {
         z-index: 9;
     }
 }
+.btn {
+    padding: 14px 40px;
+    background-color: transparent;
+    color: #0056b2;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border: 1px solid #0056b2;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color .5s;
 
+    &:hover {
+        background-color: #0056b2;
+        color: #fff;
+    }
+}
+.banner {
+    min-height: 425px;
+    display: flex;
+    background: #fff url('../img/banner-pattern.png') repeat-x;
+    align-items: center;
 
-
-// process
-.process {
-    color: $main-text;
-
-    &-text {
-        margin-bottom: 60px;
-        text-align: center;
-        font-size: 36px;
+    &-heading {
+        margin-bottom: 4%;
+        color: $main-text;
+        font-size: 48px;
         font-weight: bold;
-    }
 
-    &__info {
-        display: flex;
-
-        &-steps {
-            width: 50%;
-            
-            .steps__list {
-
-                &-item {
-                    margin-bottom: 50px;
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-
-                    &:after {
-                        content: '';
-                        position: absolute;
-                        bottom: -25px;
-                        height: 1px;
-                        width: 60%;
-                        background-color: $main-text;
-                        opacity: .3;
-                    }
-
-                    .img-wrap {
-                        margin-right: 25px;
-                        height: 40px;
-                        width: 40px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: #59a5da;
-                        border-radius: 50%;
-                        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06);
-                    }
-
-                    .text-wrap {
-                        font-size: 18px;
-
-                        a {
-                            color: #0056b2;
-                            text-decoration: underline;
-                        }
-                    }
-                }
-            }
-        }
-
-        &-img {
-            width: 50%;
+        &--center {
+            text-align: center;
         }
     }
+
+    &-descr {
+        margin-bottom: 4%;
+        color: $main-text;
+        font-size: 18px;
+        line-height: 1.4;
+
+        &--block {
+            margin: 0 auto;
+            width: 80%;
+        }
+    }
+}
+.circle-block {
+    height: 42px;
+    width: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #59a5da;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06);
 }
 
 
 
-// footer
-.footer {
-    padding: 26px 0;
-    background-color: #f7fafe;
-    color: $main-text;;
+@import 'blocks/_header.scss';
 
-    &__nav {
+@import 'blocks/index.scss';
 
-        &-link {
-            margin-right: 24px;
-            font-size: 14px;
-        }
-    }
+@import 'blocks/_about.scss';
 
-    &-divide {
-        margin: 12px 0 14px;
-        height: 1px;
-        width: 100%;
-        background-color: #d8d8d8;
-    }
+@import 'blocks/services';
 
-    &__info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 12px;
-        opacity: .4;
+@import 'blocks/_contact.scss';
 
-        &-address {
-            line-height: 1.8;
-        }
-    }
-}
+
+@import 'blocks/_footer.scss';

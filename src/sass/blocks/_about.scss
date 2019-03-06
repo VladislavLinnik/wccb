@@ -1,0 +1,117 @@
+// about
+.about {
+    background-color: #e8ecef;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text {
+        width: 65%;
+
+        &-descr {
+            color: $main-text;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.5;
+
+            strong {
+                font-weight: 500;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 4%;
+            }
+        }
+    }
+
+    &__info {
+        width: 35%;
+
+        &-list {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+
+            .btn {
+                min-width: 80%;
+
+                &:not(:last-child) {
+                    margin-bottom: 4%;
+                }
+            }
+        }
+    }
+}
+
+
+
+// tech
+.tech {
+
+    .container {
+        display: flex;
+    }
+
+    &__text {
+        width: 65%;
+        color: $main-text;
+
+        &-title {
+            margin-bottom: 45px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        &-descr {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.5;
+
+            strong {
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__network {
+        position: relative;
+        width: 35%;
+
+        .network {
+            position: absolute;
+
+            img {
+                max-width: 100%;
+            }
+
+            &.network-1 {
+                top: 54%;
+                left: 56%;
+            }
+            &.network-2 {
+                top: 22%;
+                left: 72%;
+            }
+            &.network-3 {
+                top: 84%;
+                left: 78%;
+            }
+            &.network-4 {
+                top: 84%;
+                left: 36%;
+            }
+            &.network-5 {
+                top: 36%;
+                left: 28%;
+            }
+            &.network-6 {
+                top: 62%;
+                left: 10%;
+            }
+        }
+    }
+}

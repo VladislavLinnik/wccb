@@ -1,0 +1,229 @@
+// services
+.services {
+    background-color: #bfd2e4;
+
+    &-wrap {
+        margin: 0 auto;
+        width: 900px;
+    }
+
+    &-text {
+        margin-bottom: 35px;
+        color: $main-text;
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    &-card {
+        padding: 35px 0;
+        display: flex;
+        background-color: #fff;
+
+        border-radius: 10px;
+        box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.04);
+    
+        
+
+        .card__info {
+            padding: 30px 40px 0;
+            position: relative;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-right: solid 1px #e6e6e6;
+
+            &:last-child {
+                border-right: none;
+            }
+
+            &-heading {
+                margin-bottom: 35px;
+                color: #59a5da;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            &-descr {
+                margin-bottom: 15px;
+                color: $main-text;
+                font-size: 18px;
+                line-height: 1.3;
+            }
+
+            &-img {
+                margin-bottom: -35px;
+                text-align: right;
+
+                img {
+                    
+                }
+                
+                span {
+                    position: absolute;
+                    left: 0;
+                    bottom: -30px;
+                    color: $main-text;
+                    opacity: .1;
+                    font-size: 70px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+
+
+// calculator
+.calc {
+    position: relative;
+    background-color: #e8ecef;
+
+    .container {
+        text-align: center;
+    }
+
+    &__card {
+        padding: 50px 110px;
+        position: relative;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.04);
+        z-index: 99;
+
+        &-block {
+            display: flex;
+        }
+
+        &-column {
+            margin-bottom: 50px;
+            width: 50%;
+
+            .card__form {
+                text-align: left;
+
+                select,
+                input {
+                    padding: 12px 20px 12px 10px;
+                    width: 80%;
+                    display: block;
+                    color: #4c5769;
+                    border: solid 1px rgba(76, 87, 105, 0.07);
+                    border-radius: 3px;
+                }
+
+                select {
+                    margin-bottom: 18px;
+                }
+
+                option {
+                    opacity: .7;
+                }
+
+                label {
+                    margin-bottom: 5px;
+                    display: block;
+                    color: #4c5769;
+                    opacity: .5;
+                    font-size: 14px;
+                }
+
+                input {
+                    padding-left: 30px;
+                    background: url(../img/coins.svg) no-repeat 10px 50%;
+                }
+            }
+
+            .card__info {
+                text-align: center;
+
+                &-stat {
+                    margin-bottom: 30px;
+
+                    &:nth-child(2) {
+                        margin-bottom: 40px;
+                    }
+
+                    .number {
+                        color: #59a5da;
+                        font-weight: bold;
+                        font-size: 48px;
+                    }
+
+                    .text {
+                        font-size: 14px;
+                        color: #4c5769;
+                    }
+
+                    span {
+                        display: block;
+                    }
+                }
+
+                &-more {
+                    color: #0056b2;
+                    font-size: 12px;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &-descr {
+        margin-bottom: 40px;
+        color: #4c5769
+    }
+}
+
+
+
+// process
+.process {
+    color: $main-text;
+
+    &__info {
+        display: flex;
+
+        &-steps {
+            width: 50%;
+            
+            .steps__list {
+
+                &-item {
+                    margin-bottom: 50px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        bottom: -25px;
+                        height: 1px;
+                        width: 60%;
+                        background-color: $main-text;
+                        opacity: .3;
+                    }
+
+                    .img-wrap {
+                        margin-right: 25px;
+                    }
+
+                    .text-wrap {
+                        font-size: 18px;
+
+                        a {
+                            color: #0056b2;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-img {
+            width: 50%;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.deposit {
+    background-color: #e8ecef;
+
+    &-wrap {
+        position: relative;
+        display: flex;
+        align-items: center;
+        z-index: 10;
+    }
+
+    &__cryptolist {
+        width: 55%;
+        padding: 35px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.04);
+        
+        .title {
+            margin-bottom: 12px;
+            color: #59a5da;
+            font-size: 28px;
+        }
+
+        .subtitle {
+            margin-bottom: 30px;
+            color: $main-text;
+            font-size: 18px;
+        }
+    }
+
+    &__features {
+        padding-left: 5%;
+        width: 45%;
+
+        .features {
+
+            &__list {
+
+                &-item {
+
+                    &:not(:last-child) {
+                        margin-bottom: 4%;
+                    }
+
+                    .img-wrap {
+                        margin-right: 5%;
+                        float: left;
+
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+
+                    .text {
+                        font-size: 18px;
+                        color: $main-text;
+                        font-weight: 400;
+
+                        a {
+                            color: #0054b8;
+                            text-decoration: underline;
+                        }
+
+                        strong {
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
