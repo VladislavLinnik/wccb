@@ -25,9 +25,6 @@
 	<!-- ПОДКЛЮЧЕНИЕ JQUERY -->
 	<script src="js/jquery.3.3.1.min.js"></script>
 
-	<!-- SCRIPTS -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
 	<!-- FOR SUPPORT HTML5 IN IE -->
 	<!--[if IE]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -90,11 +87,20 @@
                 <div class="deposit__cryptolist">
                     <h2 class="title">Приумножайте свои криптоактивы</h2>
                     <p class="subtitle">Вы можете внести вклад в любой указанной криптовалюте</p>
-                </div>
+					
+					<ul class="cryptolist">
+						<li class="cryptolist__item">
+							<div class="cryptolist__item-img">
+								<img src="" alt="">
+							</div>
+							<h4 class="cryptolist__item-text">BTC</h4>
+						</li>
+					</ul>
+				</div>
 
                 <div class="deposit__features">
                     <ul class="features__list">
-                        <li class="features__list-item clearfix">
+                        <li class="features__list-item">
                             <div class="img-wrap circle-block">
                                 <img src="img/wallet.svg" alt="">
                             </div>
@@ -102,15 +108,15 @@
                                 Получайте до <strong>10%</strong> годовых
                             </p>
                         </li>
-                        <li class="features__list-item clearfix">
+                        <li class="features__list-item">
                             <div class="img-wrap circle-block">
                                 <img src="img/event.svg" alt="">
                             </div>
                             <p class="text">
-                                Вы можете разместить свои криптовактивы <strong>от 1 месяца.</strong>
+                            	Вы можете разместить свои криптовактивы <strong>от 1 месяца.</strong>
                             </p>
                         </li>
-                        <li class="features__list-item clearfix">
+                        <li class="features__list-item">
                             <div class="img-wrap circle-block">
                                 <img src="img/contract.svg" alt="">
                             </div>
@@ -118,9 +124,9 @@
                                 По истечении срока размещения депозита мы гарантировано вернем вам всю сумму вклада и начисленные проценты.
                             </p>
                         </li>
-                        <li class="features__list-item clearfix">
+                        <li class="features__list-item">
                             <div class="img-wrap circle-block">
-                                <img src="img/shield.svg" alt="">
+                                <img src="img/shield.svg" style="width: 18px; height: 20px;" alt="">
                             </div>
                             <p class="text">
                                 Все риски застрахованы: <a href="#">страховой полис</a> возместит любые потери средств наших клиентов. <br>
@@ -133,6 +139,141 @@
         </div>
         <img class="section-img" src="img/group.svg" alt="">
         <img class="section-img2" src="img/group2.svg" alt="">
+	</section>
+	
+	<!-- info -->
+	<section class="info section">
+		<div class="container">
+			<div class="tabs">
+ 
+				<ul class="tabs__caption">
+					<li class="active">Процентные ставки</li>
+					<li>Условия по вкладу</li>
+					<li>Документы</li>
+				</ul>
+			   
+				<div class="tabs__content active">
+					<div class="info__rate">
+						<div class="currency">
+							<div class="currency-img">
+								<img src="" alt="">
+							</div>
+							<h2 class="currency-name">Bitcoin</h2>
+						</div>
+
+						<div class="tabs">
+
+							<ul class="tabs__caption">
+								<li class="active">
+									<h6 class="subtext">Тариф 1</h6>
+									<h5 class="text">Выплаты процентов по истечении срока депозита</h5>
+								</li>
+								<li>
+									<h6 class="subtext">Тариф 1</h6>
+									<h5 class="text">Выплаты процентов ежемесячно</h5>
+								</li>
+							</ul>
+
+							<div class="tabs__content active">
+								<table>
+									<thead>
+										<tr>
+											<td colspan="4">Сумма вклада</td>
+											<td colspan="4">Процентная ставка</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="month">
+											<td></td>
+											<td>1 месяц</td>
+											<td>3 месяц</td>
+											<td>6 месяц</td>
+											<td>9 месяц</td>
+											<td>12 месяц</td>
+											<td>15 месяц</td>
+											<td>18 месяц</td>
+										</tr>
+										<tr>
+											<td>До 1 BTC</td>
+											<td>2,7%</td>
+											<td>3,6%</td>
+											<td>4,5%</td>
+											<td>5,4%</td>
+											<td>6,3%</td>
+											<td>6,75%</td>
+											<td>7,2%</td>
+										</tr>
+										<tr>
+											<td>1-3 BTC</td>
+											<td></td>
+											<td>4%</td>
+											<td>5%</td>
+											<td>6%</td>
+											<td>7%</td>
+											<td>7,5%</td>
+											<td>8%</td>
+										</tr>
+										<tr>
+											<td>3-10 BTC</td>
+											<td></td>
+											<td></td>
+											<td>5,5%</td>
+											<td>6,6%</td>
+											<td>7,7%</td>
+											<td>8,25%</td>
+											<td>8,8%</td>
+										</tr>
+										<tr>
+											<td>От 10 BTC</td>
+											<td></td>
+											<td></td>
+											<td>5,75%</td>
+											<td>6,9%</td>
+											<td>8,05%</td>
+											<td>8,625%</td>
+											<td>9,2%</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<div class="info__rate-divide"></div>
+
+								<div class="info__rate-descr">
+									<p>
+										Проценты по вкладу выплачиваются по истечении срока депозита и присоединяются к сумме вклада. Валюта вклада: Bitcoin. Минимальная сумма вклада: 0,03 BTC (100$). *На вклад сроком 1 месяц максимальная сумма вклада 0,5 BTC (1 800$). **На вклад сроком 3 месяца максимальная сумма вклада 2 BTC (5 000$). Максимальная сумма вклада: 26 BTC (100 000$). Внесение денежных средств: через личный кабинет с помощью пополнения счета кошелька. Дополнительные взносы и расходные операции не осуществляются. Досрочного востребования вклада не предусмотрено. Пролонгация не предусмотрена. Подробная информация — на сайте www.wccb.com и по тел. 8-800-100-07-01. Информация приведена на 01.03.2019 и не является офертой.  
+										Денежные средства застрахованы в государственной эстонской системе страхования вкладов.
+									</p>
+								</div>
+							</div>
+							<div class="tabs__content">
+								
+							</div>
+
+						</div>
+					</div>
+				</div>
+			   
+				<div class="tabs__content">
+					<div class="info__terms">
+						
+					</div>
+				</div>
+				
+				<div class="tabs__content">
+					<div class="info__terms">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- banner -->
+	<section class="banner banner-deposit">
+		<div class="container">
+            <h2 class="banner-heading banner-heading--center">Для того чтобы воспользоваться услугой депозит</h2>
+            <button class="btn">Зарегистрируйтесь в системе</button>
+		</div>
     </section>
 
     <!-- footer -->

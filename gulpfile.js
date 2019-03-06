@@ -4,7 +4,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('styles',function(){
-    return gulp.src('./src/sass/**/*.+(scss|sass)')
+    return gulp.src('./src/sass/*.+(scss|sass)')
                 .pipe(concat('style.css'))
                 .pipe(autoprefixer({
                     browsers: ['> 0.1%']

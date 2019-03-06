@@ -4,7 +4,6 @@
     &-wrap {
         position: relative;
         display: flex;
-        align-items: center;
         z-index: 10;
     }
 
@@ -26,6 +25,22 @@
             color: $main-text;
             font-size: 18px;
         }
+
+        .cryptolist {
+            display: flex;
+            flex-wrap: wrap;
+
+            &__item {
+
+                &-img {
+
+                }
+
+                &-text {
+                    text-transform: uppercase;
+                }
+            }
+        }
     }
 
     &__features {
@@ -37,6 +52,7 @@
             &__list {
 
                 &-item {
+                    display: flex;
 
                     &:not(:last-child) {
                         margin-bottom: 4%;
@@ -44,7 +60,6 @@
 
                     .img-wrap {
                         margin-right: 5%;
-                        float: left;
 
                         img {
                             max-width: 100%;
@@ -52,6 +67,7 @@
                     }
 
                     .text {
+                        width: 80%;
                         font-size: 18px;
                         color: $main-text;
                         font-weight: 400;
@@ -68,5 +84,157 @@
                 }
             }
         }
+    }
+}
+
+.info {
+    background-color: #bfd2e4;
+
+    .tabs {
+
+        &__caption {
+            margin-bottom: 15px;
+
+            li {
+                padding: 20px 0;
+                min-width: 340px;
+                display: inline-block;
+                background-color: #fff;
+                color: #59a5da;
+                text-align: center;
+                font-size: 18px;
+                border-radius: 10px;
+                box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+
+                &.active {
+                    background-color: #59a5da;
+                    color: #fff;
+                }
+
+                &:not(:last-child) {
+                    margin-right: 24px;
+                }
+            }
+        }
+
+        &__content {
+            padding: 36px 20% 55px 36px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.04);
+        }
+
+        .info__rate {
+
+            .currency {
+                margin-bottom: 34px;
+
+                &-name {
+                    color: $main-text;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 24px;
+                }
+            }
+
+            &-divide {
+                margin: 40px 0;
+                height: 1px;
+                width: 100%;
+                background-color: rgba($main-text, .4);
+            }
+
+            &-descr {
+                color: rgba($main-text, .4);
+
+                p {
+                    font-size: 18px;
+                    line-height: 1.5;
+                }
+            }
+
+            .tabs {
+
+                &__caption {
+                    border-bottom: 1px solid #bfd2e4;
+                    
+                    li {
+                        padding: 14px 0;
+                        min-width: auto;
+                        display: inline-block;
+                        background-color: transparent;
+                        color: #59a5da;
+                        text-align: left;
+                        font-size: 14px;
+                        border-radius: 0;
+                        box-shadow: none;
+                        cursor: pointer;
+
+                        .subtext {
+                            margin-bottom: 8px;
+                            color: $main-text;
+                            opacity: 0.4;
+                        }
+
+                        .text {
+                            color: #4c5769;
+                            letter-spacing: 0.8px;
+                        }
+        
+                        &.active {
+                            background-color: transparent;
+                            border-bottom: 2px solid #59a5da;
+                        }
+        
+                        &:not(:last-child) {
+                            margin-right: 50px;
+                        }
+                    }
+                }
+
+                &__content {
+                    padding: 40px 0 0 0;
+                    background-color: transparent;
+                    border-radius: 0;
+                    box-shadow: none;
+
+                    table {
+                        width: 100%;
+
+                        tr {
+
+                            &.month {
+
+                                td {
+                                    color: rgba($main-text, .4);
+                                }
+                            }
+
+                            td {
+                                padding: 8px;
+
+                                &:nth-child(1) {
+                                    padding-right: 20%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.banner-deposit {
+
+    .banner-heading {
+        margin-bottom: 8%;
+        font-size: 36px;
+    }
+    
+    .btn {
+        display: block;
+        margin: 0 auto;
     }
 }

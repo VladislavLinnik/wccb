@@ -113,6 +113,12 @@ section {
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06);
 }
 
+.tabs__content {
+  display: none;
+}
+.tabs__content.active {
+  display: block;
+}
 
 
 @import 'blocks/_header.scss';
@@ -121,9 +127,8 @@ section {
 
 @import 'blocks/_about.scss';
 
-@import 'blocks/services';
+@import 'blocks/_services.scss';
 
 @import 'blocks/_contact.scss';
-
 
 @import 'blocks/_footer.scss';
