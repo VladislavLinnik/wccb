@@ -30,6 +30,20 @@
                 &-link {
                     font-size: 14px;
 
+                    &.active {
+                        position: relative;
+
+                        &:before {
+                            content: '';
+                            height: 1px;
+                            width: 16px;
+                            position: absolute;
+                            bottom: -5px;
+                            left: 0;
+                            background-color: #fff;
+                        }
+                    }
+
                     &.submenu {
                         
                         &::after {

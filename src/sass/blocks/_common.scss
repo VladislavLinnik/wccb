@@ -109,4 +109,8 @@ section {
     background-color: #59a5da;
     border-radius: 50%;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06);
+
+    img {
+        max-width: 100%;
+    }
 }
