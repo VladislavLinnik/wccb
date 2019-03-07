@@ -108,7 +108,20 @@
 		</div>
 	</footer>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+	<script>
+		var googleMap;
+
+		function initMap() {
+
+		googleMap = new google.maps.Map(document.getElementById('map'), {
+				// disable ui navigation
+				disableDefaultUI: true, 
+				center: {lat: -34.397, lng: 150.644},
+				zoom: 16
+			});
+		}
+	</script>
 	<script src="js/index.js"></script>
 </body>
 </html>

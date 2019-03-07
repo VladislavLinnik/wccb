@@ -1,0 +1,112 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+html {
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1150px;
+    width: 90%;
+}
+section {
+    position: relative;
+}
+.section {
+    padding: 8% 0;
+
+    &-text {
+        margin-bottom: 65px;
+        color: $main-text;
+        text-align: center;
+        font-weight: bold;
+        font-size: 36px;
+    }
+
+    &-img {
+        width: 45vw;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+    &-img2 {
+        width: 25vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 9;
+    }
+}
+.btn {
+    padding: 14px 40px;
+    background-color: transparent;
+    color: #0056b2;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border: 1px solid #0056b2;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color .5s;
+
+    &:hover {
+        background-color: #0056b2;
+        color: #fff;
+    }
+}
+.banner {
+    min-height: 425px;
+    display: flex;
+    background: #fff url('../img/banner-pattern.png') repeat-x;
+    align-items: center;
+
+    &-heading {
+        margin-bottom: 4%;
+        color: $main-text;
+        font-size: 48px;
+        font-weight: bold;
+
+        &--center {
+            text-align: center;
+        }
+    }
+
+    &-descr {
+        margin-bottom: 4%;
+        color: $main-text;
+        font-size: 18px;
+        line-height: 1.4;
+
+        &--block {
+            margin: 0 auto;
+            width: 80%;
+        }
+    }
+}
+.circle-block {
+    height: 42px;
+    width: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #59a5da;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06);
+}
